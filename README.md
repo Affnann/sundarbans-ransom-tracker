@@ -6,9 +6,13 @@ Fishers, crab collectors, honey gatherers and woodcutters who work in the Sundar
 
 **Status:** 54 incidents (February 2015 to June 2026) from Prothom Alo, The Daily Star and bdnews24, plus 7 records of protection payments.
 
-## What each row will record
+![Reported incidents and people taken, by year](figures/incidents_by_year.png)
+
+The chart counts **reported** incidents. Reporting changed over time: from 2025 many reports come from Coast Guard press releases about its operations, so part of the recent rise may be more reporting, not only more abductions.
+
+## What each row records
 - Date of the incident and date of the report
-- Location (forest range, station or nearest named place)
+- Location (forest range, river or canal, and upazila where the article names it)
 - Number of people abducted and their occupation
 - Ransom demanded and ransom paid, if reported, with a flag for which one
 - How many outlets reported it, and links to the reports
@@ -31,7 +35,8 @@ Besides ransom, armed groups charge forest workers to enter: a fee per boat or p
 ```
 data/raw/     source lists and download records (no article text)
 data/clean/   the coded dataset
-code/         numbered scripts, run in order
+code/         numbered scripts, run in order from the repository root
+              01_yearly_chart.py  -> figures/incidents_by_year.png
 figures/      charts and the map
 ```
 

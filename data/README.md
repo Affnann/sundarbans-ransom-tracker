@@ -37,6 +37,8 @@ Web searches of each outlet, plus Prothom Alo's own site search run year by year
 - `date_precision`: `exact`, `derived_from_weekday` (the article says e.g. 'last Friday'; the date is worked out from the publication date), `approximate`, `month`, `year_inferred`.
 - `waters`: `forest` (rivers and canals inside the forest) or `coastal_sea` (the sea just off it).
 - `confirmation`: `reported`, `unconfirmed` (a key fact is missing or the article contradicts itself) or `disputed` (an official source contests it).
+- `site_upazila`: the upazila of the abduction or holding site, filled only when the article names it. Victims' home villages are not used.
+- `forest_range`: the forest department range, as named in the article.
 - `other_urls`: further reports of the same incident.
 
 ## Coverage
