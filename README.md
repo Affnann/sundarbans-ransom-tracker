@@ -1,10 +1,17 @@
 # Sundarbans Ransom Tracker
 
-A hand-coded record of kidnapping-for-ransom incidents in the Bangladesh Sundarbans, built from published news reports, 2015 to the present.
+A hand-coded record of kidnapping-for-ransom incidents in the Bangladesh Sundarbans, built from published news reports, February 2015 to October 2026.
 
 Fishers, crab collectors, honey gatherers and woodcutters who work in the Sundarbans forest have long been abducted by armed groups and held until their families pay. No official dataset of these incidents exists. This project builds one from news coverage, mostly in Bangla, so that the size, prices and timing of the ransom trade can be measured, including before and after the 2016–2018 surrender campaign.
 
-**Status:** 63 incidents (February 2015 to 27 October 2026) from Prothom Alo, Kaler Kantho, Samakal, The Daily Star and bdnews24, plus 9 records of protection payments.
+**Version 1.0.0** (29 October 2026): 63 incidents involving 439 people where a number is reported, from Prothom Alo, Kaler Kantho, Samakal, The Daily Star and bdnews24, plus 9 records of protection payments.
+
+## Key findings
+- **2015:** 14 reported incidents and 130 people taken.
+- **2019–2023:** one reported incident in five years, after the 2016–2018 surrender of armed groups. Three Bangla newspapers were searched for these years.
+- **2024–2026:** reports return after August 2024 and reach 21 incidents and 159 people in 2026 up to 27 October, even as a new wave of surrenders began in July 2026.
+- **Where:** of the 41 incidents whose report names a forest range, 30 are in the Satkhira range in the west.
+- **Prices:** reported ransom demands range from 20,000 to 300,000 Taka per person. Separately, fishers report entry fees of 4,000 to 20,000 Taka per boat before a trip, and honey collectors up to 90,000 Taka per boat for a season.
 
 ![Reported incidents and people taken, by year](figures/incidents_by_year.png)
 
@@ -12,14 +19,15 @@ The chart counts **reported** incidents. Reporting changed over time: from 2025 
 
 ![Where reported abductions took place](figures/location_map.png)
 
-Most reports name only a forest range, river or canal, not an upazila. Of the incidents that name a range, most are in the **Satkhira range** in the west.
+Most reports name only a forest range, river or canal, not an upazila. Of the 41 incidents that name a range, 30 are in the **Satkhira range** in the west.
 
 ## What each row records
 - Date of the incident and date of the report
 - Location (forest range, river or canal, and upazila where the article names it)
 - Number of people abducted and their occupation
 - Ransom demanded and ransom paid, if reported, with a flag for which one
-- How many outlets reported it, and links to the reports
+- A link to the report, and links to other reports of the same incident
+- Whether the facts are confirmed, unconfirmed or disputed
 
 ## What this dataset does not contain
 - No names of victims, families or accused individuals
@@ -30,8 +38,14 @@ Most reports name only a forest range, river or canal, not an upazila. Of the in
 - It counts **reported** incidents. Many abductions are never reported, so totals are a lower bound.
 - Ransom amounts come from press reports, often from relatives, and are not verified.
 - Coverage depends on which outlets were searched and how their archives are indexed.
-- The Coast Guard said it had rescued 41 hostages between 12 February and 8 July 2026; this dataset has press reports for about 32 of them, so some rescues never reached the press.
+- The Coast Guard said it had rescued 41 hostages between 12 February and 8 July 2026; this dataset has press reports for 33 of them, so some rescues never reached the press.
 - Only one incident was found for 2019 to 2023. That fits the 2016–2018 surrender of armed groups, but quieter reporting could also explain part of it.
+
+## How the data was checked
+- Every article was read in full, then checked a second time by a script confirming that each coded number and place appears in the original text.
+- Dates given only as a weekday ("last Friday") were worked out from the publication date and checked against a calendar.
+- Where reports disagree, both versions are kept in the notes and the row is marked `unconfirmed`.
+- A sample of rows was checked by hand against the articles before release.
 
 ## Protection payments
 Besides ransom, armed groups charge forest workers to enter: a fee per boat or per person, paid before a trip. `data/clean/protection_payments.csv` records each reported amount, who paid it and what it was for.
@@ -45,6 +59,11 @@ code/         numbered scripts, run in order from the repository root
               02_location_map.py    -> figures/location_map.png
 figures/      charts and the map
 ```
+
+## How to cite
+Kazi Affnann Azom (2026). *Sundarbans Ransom Tracker* (version 1.0.0) [dataset]. https://github.com/Affnann/sundarbans-ransom-tracker
+
+Citation details are also in `CITATION.cff`.
 
 ## License
 Code: MIT (see `LICENSE`). Dataset built here: CC BY 4.0. Boundaries: Bangladesh Bureau of Statistics via HDX, CC BY-IGO (see `data/README.md`).

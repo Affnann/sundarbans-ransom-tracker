@@ -26,15 +26,19 @@ assert not missing, f"upazila names not found in boundaries: {missing}"
 
 range_label = {
     "Satkhira": "Satkhira range",
+    "Khulna": "Khulna range",
     "Chandpai": "Chandpai range",
     "Sharankhola": "Sharankhola range",
     "Sharankhola/Chandpai": "Sharankhola or Chandpai",
     "East Sundarbans": "East Sundarbans, range not named",
     "": "No range named",
 }
+unlabelled = set(d["forest_range"]) - set(range_label)
+assert not unlabelled, f"forest ranges without a label: {unlabelled}"
 r = d["forest_range"].map(range_label).value_counts()
 order = [v for v in range_label.values() if v in r.index]
 r = r.reindex(order)
+assert r.sum() == len(d), "range chart does not cover every incident"
 
 fig, (ax, bx) = plt.subplots(1, 2, figsize=(11, 6.4), facecolor=SURFACE,
                              gridspec_kw={"width_ratios": [1.15, 1]})

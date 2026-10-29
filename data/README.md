@@ -17,7 +17,7 @@ Used only to code incidents. Article text is not stored or published; each row l
 ## Official context
 | Source | Used for | Accessed |
 |---|---|---|
-| Rapid Action Battalion (rab.gov.bd) | surrender campaign dates and official announcements | — |
+| Rapid Action Battalion (rab.gov.bd) | planned for surrender dates; not used, since surrender figures came from the news reports | — |
 
 ## Map
 | Source | License | Accessed |
@@ -29,7 +29,7 @@ Used only to code incidents. Article text is not stored or published; each row l
 OpenStreetMap was checked for river and canal names (query of 2026-10-29). It names the Shibsa, Raimangal, Shakbaria, Kholpetua and Koyra rivers but not the Malancha, Kalindi, Chunkuri or Shela, or the small forest canals where most incidents are reported, so it was not used: a river map would have shown only about 11 of the incidents and misplaced the overall pattern.
 
 ## Files
-- `data/clean/incidents.csv`: one row per incident. Every article was read twice; rows where the two readings disagree or a fact is missing are marked `unconfirmed` or `disputed`.
+- `data/clean/incidents.csv`: one row per incident. Every article was read in full and then checked by a script against the original text; rows where reports disagree or a key fact is missing are marked `unconfirmed` or `disputed`.
 - `data/clean/protection_payments.csv`: reported fees charged to fishers, crab collectors, woodcutters and honey collectors for entry or protection.
 - `data/raw/held_aside.csv`: reports that could not be dated, placed or checked well enough to include.
 
@@ -50,4 +50,4 @@ Incidents from 1 January 2015 to 27 October 2026 (the last report found on 2026-
 ## Licenses
 - The coded dataset in `data/clean/` is released under CC BY 4.0.
 - News reports remain the property of their publishers and are not redistributed.
-- Map data keeps its source's license.
+- The boundary extract keeps its source's license (CC BY-IGO).

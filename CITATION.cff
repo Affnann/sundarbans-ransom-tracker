@@ -1,10 +1,20 @@
 cff-version: 1.2.0
 message: "If you use this dataset or code, please cite it as below."
 title: "Sundarbans Ransom Tracker"
+abstract: "A hand-coded record of kidnapping-for-ransom incidents in the Bangladesh Sundarbans, February 2015 to October 2026, built from Bangla and English news reports, with ransom amounts and protection payments."
 authors:
   - family-names: Azom
     given-names: Kazi Affnann
     orcid: "https://orcid.org/0009-0001-5998-7642"
+version: 1.0.0
+date-released: 2026-10-29
 repository-code: "https://github.com/Affnann/sundarbans-ransom-tracker"
 license: MIT
 type: dataset
+keywords:
+  - Sundarbans
+  - Bangladesh
+  - kidnapping for ransom
+  - armed groups
+  - forest workers
+  - protection payments
