@@ -7,7 +7,7 @@ Used only to code incidents. Article text is not stored or published; each row l
 
 | Source | Language | Used for | Accessed |
 |---|---|---|---|
-| Prothom Alo (prothomalo.com) | Bangla | main incident source | — |
+| Prothom Alo (prothomalo.com) | Bangla | main incident source | 2026-10-29 |
 | Samakal (samakal.com) | Bangla | incident source | — |
 | Kaler Kantho (kalerkantho.com) | Bangla | incident source | — |
 | The Daily Star (thedailystar.net) | English | incident source | — |
@@ -24,6 +24,10 @@ Used only to code incidents. Article text is not stored or published; each row l
 |---|---|---|
 | OpenStreetMap via Geofabrik (download.geofabrik.de) | ODbL 1.0, © OpenStreetMap contributors | — |
 | Bangladesh administrative boundaries via HDX (data.humdata.org) | to be checked on the dataset page | — |
+
+## Files
+- `data/clean/incidents.csv`: one row per incident. Every article was read twice; rows where the two readings disagree or a fact is missing are marked `unconfirmed` or `disputed`.
+- `data/raw/held_aside.csv`: reports that could not be dated well enough to include.
 
 ## Coverage
 Incidents from 1 January 2015 to the present.
