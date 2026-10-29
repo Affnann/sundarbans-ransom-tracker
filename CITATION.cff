@@ -6,7 +6,8 @@ authors:
   - family-names: Azom
     given-names: Kazi Affnann
     orcid: "https://orcid.org/0009-0001-5998-7642"
-version: 1.0.0
+    affiliation: "Mercenomics"
+version: 1.0.1
 date-released: 2026-10-29
 repository-code: "https://github.com/Affnann/sundarbans-ransom-tracker"
 license: MIT

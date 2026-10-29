@@ -1,0 +1,14 @@
+{
+  "title": "Sundarbans Ransom Tracker: kidnapping-for-ransom incidents in the Bangladesh Sundarbans, 2015-2026",
+  "upload_type": "dataset",
+  "description": "<p>A hand-coded record of kidnapping-for-ransom incidents in the Bangladesh Sundarbans, February 2015 to October 2026, built from Bangla and English news reports (Prothom Alo, Kaler Kantho, Samakal, The Daily Star and bdnews24), with reported ransom amounts and a separate table of protection payments that armed groups charge forest workers. Version 1.0.1: 63 incidents involving 439 people where a number is reported, and 9 records of protection payments. It counts reported incidents only, so totals are a lower bound; ransom amounts come from press reports and are not verified. No names of victims, families or accused individuals are included, and no article text is redistributed.</p>",
+  "creators": [
+    {
+      "name": "Azom, Kazi Affnann",
+      "affiliation": "Mercenomics",
+      "orcid": "0009-0001-5998-7642"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "keywords": ["Sundarbans", "Bangladesh", "kidnapping for ransom", "armed groups", "forest workers", "protection payments", "protection rackets"]
+}

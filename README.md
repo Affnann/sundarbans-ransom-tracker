@@ -1,10 +1,12 @@
 # Sundarbans Ransom Tracker
 
+Published by [Mercenomics](https://mercenomics.org), an independent data archive on the business of force for hire.
+
 A hand-coded record of kidnapping-for-ransom incidents in the Bangladesh Sundarbans, built from published news reports, February 2015 to October 2026.
 
 Fishers, crab collectors, honey gatherers and woodcutters who work in the Sundarbans forest have long been abducted by armed groups and held until their families pay. No official dataset of these incidents exists. This project builds one from news coverage, mostly in Bangla, so that the size, prices and timing of the ransom trade can be measured, including before and after the 2016–2018 surrender campaign.
 
-**Version 1.0.0** (29 October 2026): 63 incidents involving 439 people where a number is reported, from Prothom Alo, Kaler Kantho, Samakal, The Daily Star and bdnews24, plus 9 records of protection payments.
+**Version 1.0.1** (29 October 2026; same data as 1.0.0): 63 incidents involving 439 people where a number is reported, from Prothom Alo, Kaler Kantho, Samakal, The Daily Star and bdnews24, plus 9 records of protection payments.
 
 ## Key findings
 - **2015:** 14 reported incidents and 130 people taken.
