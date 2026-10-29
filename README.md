@@ -10,6 +10,10 @@ Fishers, crab collectors, honey gatherers and woodcutters who work in the Sundar
 
 The chart counts **reported** incidents. Reporting changed over time: from 2025 many reports come from Coast Guard press releases about its operations, so part of the recent rise may be more reporting, not only more abductions.
 
+![Where reported abductions took place](figures/location_map.png)
+
+Most reports name only a forest range, river or canal, not an upazila. Of the incidents that name a range, most are in the **Satkhira range** in the west.
+
 ## What each row records
 - Date of the incident and date of the report
 - Location (forest range, river or canal, and upazila where the article names it)
@@ -36,9 +40,10 @@ Besides ransom, armed groups charge forest workers to enter: a fee per boat or p
 data/raw/     source lists and download records (no article text)
 data/clean/   the coded dataset
 code/         numbered scripts, run in order from the repository root
-              01_yearly_chart.py  -> figures/incidents_by_year.png
+              01_yearly_chart.py    -> figures/incidents_by_year.png
+              02_location_map.py    -> figures/location_map.png
 figures/      charts and the map
 ```
 
 ## License
-Code: MIT (see `LICENSE`). Dataset built here: CC BY 4.0. Map data keeps its source's license (see `data/README.md`).
+Code: MIT (see `LICENSE`). Dataset built here: CC BY 4.0. Boundaries: Bangladesh Bureau of Statistics via HDX, CC BY-IGO (see `data/README.md`).

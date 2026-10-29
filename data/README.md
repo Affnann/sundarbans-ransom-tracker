@@ -22,8 +22,11 @@ Used only to code incidents. Article text is not stored or published; each row l
 ## Map
 | Source | License | Accessed |
 |---|---|---|
-| OpenStreetMap via Geofabrik (download.geofabrik.de) | ODbL 1.0, © OpenStreetMap contributors | — |
-| Bangladesh administrative boundaries via HDX (data.humdata.org) | to be checked on the dataset page | — |
+| Bangladesh administrative boundaries (upazilas), Bangladesh Bureau of Statistics via HDX (data.humdata.org, dataset cod-ab-bgd, valid on 2023-05-21) | CC BY-IGO | 2026-10-29 |
+
+`data/raw/hdx_upazilas_satkhira_khulna_bagerhat.geojson` is an extract of the 26 upazilas of Satkhira, Khulna and Bagerhat districts, simplified to about 60 m.
+
+OpenStreetMap was checked for river and canal names (query of 2026-10-29). It names the Shibsa, Raimangal, Shakbaria, Kholpetua and Koyra rivers but not the Malancha, Kalindi, Chunkuri or Shela, or the small forest canals where most incidents are reported, so it was not used: a river map would have shown only about 11 of the incidents and misplaced the overall pattern.
 
 ## Files
 - `data/clean/incidents.csv`: one row per incident. Every article was read twice; rows where the two readings disagree or a fact is missing are marked `unconfirmed` or `disputed`.
