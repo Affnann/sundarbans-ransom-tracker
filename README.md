@@ -4,7 +4,7 @@ A hand-coded record of kidnapping-for-ransom incidents in the Bangladesh Sundarb
 
 Fishers, crab collectors, honey gatherers and woodcutters who work in the Sundarbans forest have long been abducted by armed groups and held until their families pay. No official dataset of these incidents exists. This project builds one from news coverage, mostly in Bangla, so that the size, prices and timing of the ransom trade can be measured, including before and after the 2016–2018 surrender campaign.
 
-**Status:** 42 incidents (February 2015 to July 2026) from Prothom Alo, The Daily Star and bdnews24, plus 7 records of protection payments.
+**Status:** 54 incidents (February 2015 to June 2026) from Prothom Alo, The Daily Star and bdnews24, plus 7 records of protection payments.
 
 ## What each row will record
 - Date of the incident and date of the report
