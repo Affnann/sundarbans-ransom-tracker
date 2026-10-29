@@ -9,6 +9,11 @@ authors:
     affiliation: "Mercenomics"
 version: 1.0.1
 date-released: 2026-10-29
+doi: "10.5281/zenodo.23766433"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23766432"
+    description: "Concept DOI for all versions"
 repository-code: "https://github.com/Affnann/sundarbans-ransom-tracker"
 license: MIT
 type: dataset

@@ -1,5 +1,7 @@
 # Sundarbans Ransom Tracker
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23766432.svg)](https://doi.org/10.5281/zenodo.23766432)
+
 Published by [Mercenomics](https://mercenomics.org), an independent data archive on the business of force for hire.
 
 A hand-coded record of kidnapping-for-ransom incidents in the Bangladesh Sundarbans, built from published news reports, February 2015 to October 2026.
@@ -63,7 +65,10 @@ figures/      charts and the map
 ```
 
 ## How to cite
-Kazi Affnann Azom (2026). *Sundarbans Ransom Tracker* (version 1.0.0) [dataset]. https://github.com/Affnann/sundarbans-ransom-tracker
+Azom, Kazi Affnann (2026). *Sundarbans Ransom Tracker: kidnapping-for-ransom incidents in the Bangladesh Sundarbans, 2015-2026* (Version v1.0.1) [Data set]. Mercenomics. https://doi.org/10.5281/zenodo.23766433
+
+- This version (v1.0.1): [10.5281/zenodo.23766433](https://doi.org/10.5281/zenodo.23766433)
+- All versions (always points to the latest): [10.5281/zenodo.23766432](https://doi.org/10.5281/zenodo.23766432)
 
 Citation details are also in `CITATION.cff`.
 
