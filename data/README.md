@@ -10,9 +10,9 @@ Used only to code incidents. Article text is not stored or published; each row l
 | Prothom Alo (prothomalo.com) | Bangla | main incident source | 2026-10-29 |
 | Samakal (samakal.com) | Bangla | incident source | — |
 | Kaler Kantho (kalerkantho.com) | Bangla | incident source | — |
-| The Daily Star (thedailystar.net) | English | incident source | — |
+| The Daily Star (thedailystar.net) | English | incident source | 2026-10-29 |
 | Dhaka Tribune (dhakatribune.com) | English | incident source | — |
-| bdnews24.com | English | incident source | — |
+| bdnews24.com (English and Bangla editions) | English, Bangla | incident source | 2026-10-29 |
 
 ## Official context
 | Source | Used for | Accessed |
@@ -27,7 +27,17 @@ Used only to code incidents. Article text is not stored or published; each row l
 
 ## Files
 - `data/clean/incidents.csv`: one row per incident. Every article was read twice; rows where the two readings disagree or a fact is missing are marked `unconfirmed` or `disputed`.
-- `data/raw/held_aside.csv`: reports that could not be dated well enough to include.
+- `data/clean/protection_payments.csv`: reported fees charged to fishers, crab collectors, woodcutters and honey collectors for entry or protection.
+- `data/raw/held_aside.csv`: reports that could not be dated, placed or checked well enough to include.
+
+## How incidents were found
+Web searches of each outlet, plus Prothom Alo's own site search run year by year from 2015 with several Bangla search terms, keeping headlines that mention the Sundarbans together with abduction, hostage or ransom. Each article was then read in full.
+
+## Key columns
+- `date_precision`: `exact`, `derived_from_weekday` (the article says e.g. 'last Friday'; the date is worked out from the publication date), `approximate`, `month`, `year_inferred`.
+- `waters`: `forest` (rivers and canals inside the forest) or `coastal_sea` (the sea just off it).
+- `confirmation`: `reported`, `unconfirmed` (a key fact is missing or the article contradicts itself) or `disputed` (an official source contests it).
+- `other_urls`: further reports of the same incident.
 
 ## Coverage
 Incidents from 1 January 2015 to the present.
