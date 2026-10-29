@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this dataset or code, please cite it as below."
+title: "Sundarbans Ransom Tracker"
+authors:
+  - family-names: Azom
+    given-names: Kazi Affnann
+    orcid: "https://orcid.org/0009-0001-5998-7642"
+repository-code: "https://github.com/Affnann/sundarbans-ransom-tracker"
+license: MIT
+type: dataset
