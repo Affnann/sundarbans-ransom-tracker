@@ -8,10 +8,10 @@ Used only to code incidents. Article text is not stored or published; each row l
 | Source | Language | Used for | Accessed |
 |---|---|---|---|
 | Prothom Alo (prothomalo.com) | Bangla | main incident source | 2026-10-29 |
-| Samakal (samakal.com) | Bangla | incident source | — |
-| Kaler Kantho (kalerkantho.com) | Bangla | incident source | — |
+| Samakal (samakal.com) | Bangla | incident source | 2026-10-29 |
+| Kaler Kantho (kalerkantho.com) | Bangla | incident source | 2026-10-29 |
 | The Daily Star (thedailystar.net) | English | incident source | 2026-10-29 |
-| Dhaka Tribune (dhakatribune.com) | English | incident source | — |
+| Dhaka Tribune (dhakatribune.com) | English | incident source | not used: pages failed to load |
 | bdnews24.com (English and Bangla editions) | English, Bangla | incident source | 2026-10-29 |
 
 ## Official context
@@ -34,7 +34,7 @@ OpenStreetMap was checked for river and canal names (query of 2026-10-29). It na
 - `data/raw/held_aside.csv`: reports that could not be dated, placed or checked well enough to include.
 
 ## How incidents were found
-Web searches of each outlet, plus Prothom Alo's own site search run year by year from 2015 with several Bangla search terms, keeping headlines that mention the Sundarbans together with abduction, hostage or ransom. Each article was then read in full.
+Web searches of each outlet, plus Prothom Alo's own site search run year by year from 2015 with several Bangla search terms, keeping headlines that mention the Sundarbans together with abduction, hostage or ransom. Each article was then read in full. Samakal and Kaler Kantho were searched by web search and read in a browser. No new incidents for 2019 to 2023 were found in either.
 
 ## Key columns
 - `date_precision`: `exact`, `derived_from_weekday` (the article says e.g. 'last Friday'; the date is worked out from the publication date), `approximate`, `month`, `year_inferred`.
@@ -45,7 +45,7 @@ Web searches of each outlet, plus Prothom Alo's own site search run year by year
 - `other_urls`: further reports of the same incident.
 
 ## Coverage
-Incidents from 1 January 2015 to the present.
+Incidents from 1 January 2015 to 27 October 2026 (the last report found on 2026-10-29).
 
 ## Licenses
 - The coded dataset in `data/clean/` is released under CC BY 4.0.

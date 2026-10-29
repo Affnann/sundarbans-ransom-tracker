@@ -73,7 +73,7 @@ for s in bx.spines.values():
 bx.tick_params(length=0)
 bx.set_title(f"Incidents by forest range, as named in the article (all {len(d)})", loc="left", fontsize=10.5, color=INK)
 
-fig.suptitle("Where reported Sundarbans abductions took place, 2015 to mid-2026", x=0.01, ha="left",
+fig.suptitle("Where reported Sundarbans abductions took place, 2015–2026", x=0.01, ha="left",
              fontsize=12.5, fontweight="bold", color=INK)
 fig.text(0.01, 0.012,
          "Most reports name only a river, canal or forest range, so most incidents cannot be placed on an upazila map. "

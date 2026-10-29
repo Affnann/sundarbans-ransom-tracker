@@ -9,7 +9,7 @@ from matplotlib.patches import Patch
 
 SURFACE, INK, INK2, GRID = "#fcfcfb", "#0b0b0b", "#52514e", "#e6e5e1"
 BAR, BAR_PARTIAL = "#2a78d6", "#86b6ef"
-PARTIAL_YEAR, PARTIAL_LABEL = 2026, "2026 (Jan–Jul only)"
+PARTIAL_YEAR, PARTIAL_LABEL = 2026, "2026 (to 27 October)"
 
 d = pd.read_csv("data/clean/incidents.csv", dtype=str)
 d["year"] = d["event_date"].str[:4].astype(int)
@@ -38,6 +38,7 @@ for ax, (col, title) in zip(axes, panels):
 top = axes[0]
 ymax = top.get_ylim()[1]
 top.text(2017.2, ymax * 0.93, "Surrender of armed groups\n2016 – Nov 2018", ha="center", va="top", fontsize=8.5, color=INK2)
+top.text(2025.55, ymax * 0.86, "New surrenders\nof armed groups,\nJul–Sep 2026", ha="right", va="top", fontsize=8.5, color=INK2)
 top.annotate("Change of government,\nAug 2024", xy=(2024, g.loc[2024, "incidents"] + ymax * 0.09),
              xytext=(2022.3, ymax * 0.62), ha="center", va="center", fontsize=8.5, color=INK2,
              arrowprops=dict(arrowstyle="-", color=INK2, linewidth=0.8))
@@ -49,7 +50,7 @@ axes[1].legend(handles=[Patch(color=BAR, label="Full year"), Patch(color=BAR_PAR
 fig.suptitle("Kidnapping for ransom in the Bangladesh Sundarbans, as reported in the press",
              x=0.01, ha="left", fontsize=12.5, color=INK, fontweight="bold")
 fig.text(0.01, 0.012, "Counts are reported incidents, not all incidents; a rise can reflect more reporting.\n"
-         "Sources: Prothom Alo, The Daily Star, bdnews24. Data: github.com/Affnann/sundarbans-ransom-tracker",
+         "Sources: Prothom Alo, Kaler Kantho, Samakal, The Daily Star, bdnews24. Data: github.com/Affnann/sundarbans-ransom-tracker",
          fontsize=7.5, color=INK2, ha="left", linespacing=1.5)
 fig.tight_layout(rect=(0, 0.055, 1, 0.965))
 fig.savefig("figures/incidents_by_year.png", dpi=200, facecolor=SURFACE)
